@@ -15,4 +15,12 @@ public class TestController {
         memberDto.setAge(20);
         return memberDto;
     }
+
+    @GetMapping("test1")
+    public MemberDto test1() {
+        MemberDto memberDto = new MemberDto();
+        memberDto.setName("test");
+        memberDto.setAge(20);
+        return memberDto;
+    }
 }
