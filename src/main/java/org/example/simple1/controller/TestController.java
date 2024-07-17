@@ -16,10 +16,26 @@ public class TestController {
         return memberDto;
     }
 
-    @GetMapping("test1")
+    @GetMapping("/test1")
     public MemberDto test1() {
         MemberDto memberDto = new MemberDto();
-        memberDto.setName("test");
+        memberDto.setName("test1");
+        memberDto.setAge(20);
+        return memberDto;
+    }
+
+    @GetMapping("/test2")
+    public MemberDto test2() {
+        MemberDto memberDto = new MemberDto();
+        memberDto.setName("test2");
+        memberDto.setAge(20);
+        return memberDto;
+    }
+
+    @GetMapping("/test3")
+    public MemberDto test3() {
+        MemberDto memberDto = new MemberDto();
+        memberDto.setName("test3");
         memberDto.setAge(20);
         return memberDto;
     }
